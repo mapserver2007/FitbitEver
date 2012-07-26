@@ -30,3 +30,5 @@ RCSLOG
 SCCS
 _$*
 _svn
+config/fitbit.auth.yml
+config/evernote.auth.yml
