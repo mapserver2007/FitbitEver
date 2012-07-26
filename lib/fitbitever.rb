@@ -8,6 +8,8 @@ module FitbitEver
   class << self
     # 設定のロード
     def load_config(path)
+      p File.exists?(path)
+      p path
       File.exists?(path) ? YAML.load_file(path) : ENV
     end
     
