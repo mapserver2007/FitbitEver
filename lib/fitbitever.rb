@@ -8,8 +8,6 @@ module FitbitEver
   class << self
     # 設定のロード
     def load_config(path)
-      p File.exists?(path)
-      p path
       File.exists?(path) ? YAML.load_file(path) : ENV
     end
     
@@ -22,7 +20,7 @@ module FitbitEver
     # Fitbit設定
     def fitbit_auth
       path = File.dirname(__FILE__) + "/../config/fitbit.auth.yml"
-      YAML.load_file(path)
+      load_config(path)
     end
     
     # Evernote設定
