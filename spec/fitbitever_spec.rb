@@ -28,6 +28,7 @@ describe FitbitEver, 'が実行する処理' do
       data["Times awakened"].should_not be_empty
       data["You were in bed for"].should_not be_empty
       data["Actual sleep time"].should_not be_empty
+      data["Your sleep efficiency"].should_not be_empty
     end
   end
   

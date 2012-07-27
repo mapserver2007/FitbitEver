@@ -56,7 +56,7 @@ module FitbitEver
         amount = elem[1].text.strip
         data[kind] = amount
       end
-      amount = (@agent.get(SLEEP_URL)/'div[id="sleepIndicator"]/span/span').text.strip
+      amount = (@agent.get(@sleep_url)/'div[id="sleepIndicator"]/span/span').text.strip
       kind = "Your sleep efficiency"
       data[kind] = amount
       data
