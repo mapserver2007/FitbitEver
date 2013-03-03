@@ -3,7 +3,7 @@ require 'fitbit'
 require 'evernote'
 
 module FitbitEver
-  VERSION = '0.0.1'
+  VERSION = '0.0.2'
   
   class << self
     # 設定のロード
